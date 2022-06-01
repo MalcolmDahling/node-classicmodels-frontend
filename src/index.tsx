@@ -6,6 +6,7 @@ import { Category } from './components/Category/Category';
 import { Contact } from './components/Contact/Contact';
 import { Home } from './components/Home/Home';
 import { Layout } from './components/Layout/Layout';
+import { Office } from './components/Office/Office';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
 
@@ -21,6 +22,7 @@ root.render(
                     <Route path="/categories" element={<Categories></Categories>}></Route>
                     <Route path="/categories/:category" element={<Category></Category>}></Route>
                     <Route path="/contact" element={<Contact></Contact>}></Route>
+                    <Route path="/contact/:officeCode" element={<Office></Office>}></Route>
                 </Route>
             </Routes>
         </BrowserRouter>
